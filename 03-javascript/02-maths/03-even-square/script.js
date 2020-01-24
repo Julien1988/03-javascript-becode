@@ -12,5 +12,12 @@
 (() => {
     document.getElementById("run").addEventListener("click", () => {
         // your code here
+        let pairNumber = [];
+        for (let i = 1; i < 21; i++) {
+            if (i % 2 === 0) {
+                pairNumber.push(i);
+            }
+        }
+        pairNumber.forEach(element => alert(element * element))
     });
 })();

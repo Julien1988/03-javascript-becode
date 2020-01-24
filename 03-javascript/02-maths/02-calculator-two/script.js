@@ -18,16 +18,23 @@
         let numberOn = document.getElementById("op-one").value;
         let numberTwo = document.getElementById("op-two").value;
 
-        let expr = 
-
-        switch (expr) {
+        switch (operation) {
             case "addition":
-            console.log(parseInt(numberOn) + parseInt(numberTwo));
-            break;
+                alert( parseInt(numberOn) + parseInt(numberTwo) );
+                break;
+            case "substraction":
+                alert( parseInt(numberOn) - parseInt(numberTwo) );
+                break;
+            case "multiplication":
+                alert( parseInt(numberOn) * parseInt(numberTwo) );
+                break;
+            case "division":
+                alert( parseInt(numberOn) / parseInt(numberTwo) );
+                break;
             default:
-            console.log('Sorry, we are out of ' + expr + '.');
+                alert("Il y a un problème !");
         }
-        
+
     };
 
 
