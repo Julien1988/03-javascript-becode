@@ -14,5 +14,29 @@
 
     document.getElementById("run").addEventListener("click", () => {
         // your code here
+
+        var number = parseInt(document.getElementById("number").value);
+        
+        //console.log(number);
+        
+        var factoNumbersArray = [];
+        for (let i = 1; i < number; i++) {
+            //console.log(i+1);
+            var multiplicator = i + 1;
+            //console.log(multiplicator);
+
+            factoNumbersArray.push(multiplicator);
+            
+        }
+      
+        const reducer = (accumulator, currentValue) => accumulator * currentValue;
+
+        alert(factoNumbersArray.reduce(reducer));
+       
+
+
     });
 })();
+
+
+  

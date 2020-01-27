@@ -14,5 +14,21 @@
 
     document.getElementById("run").addEventListener("click", () => {
         // your code here
+
+        var numbers = document.getElementById("numbers").value;
+
+        
+
+        var numbersList = numbers.split([',']);
+        //console.log(numbersList);
+        
+        
+        function compare(x, y) {
+            return x - y;
+        }
+        
+        var rankedNumbers = numbersList.sort(compare);
+        alert(rankedNumbers);
+
     });
 })();
