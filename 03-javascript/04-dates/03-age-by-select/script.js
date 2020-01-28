@@ -11,4 +11,29 @@
 
 (() => {
     // your code here
+
+    document.getElementById("run").addEventListener("click", () => {
+        var day = document.getElementById("dob-day").value;
+        var month = document.getElementById("dob-month").value;
+        var year = document.getElementById("dob-year").value;
+
+        var d = new Date();
+        var date = d.getFullYear()+'-'+(d.getMonth()+1)+'-'+d.getDate();
+        var hours = d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
+        var fullDate = date+' '+hours;
+        
+
+        var userDay = d.getDate() - day;
+        var userMonth = d.getMonth()+1 - month;
+        var userAge = d.getFullYear() - year;
+
+        if (userMonth <= 0 && userDay <= 0 ) {
+            userAge += 1;
+            alert("Vous avez exactement" + userAge + " ans");
+        } else
+            
+            alert("Vous avez exactement " + userAge + " ans");
+        
+    
+    })
 })();
