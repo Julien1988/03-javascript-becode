@@ -9,6 +9,13 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
+
+
+// Au clic sur le bouton, opère les transformations suivantes sur le tableau fruits : enlève le premier et le dernier élement, ajoute un élément "banane" au début du tableau et ajoute un élément "kiwi" à la fin du tableau.
+
+// Pour terminer, affiche le tableau résultant dans la console.
+
+
 (() => {
     const fruits = [
         "pomme",
@@ -24,4 +31,14 @@
     ];
 
     // your code here
+    
+
+    document.getElementById("run").addEventListener("click", () => {
+        fruits.pop();
+        fruits.shift();
+        fruits.unshift('banane');
+        fruits.push('kiwi');
+
+        console.log(fruits);
+    });
 })();

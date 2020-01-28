@@ -89,4 +89,15 @@
     ];
 
     // your code here
+
+    // Au clic sur le bouton, affiche (dans la console) l'email de la personne dont le nom est "Dupont" et le prénom "Jean" dans le tableau people. Ensuite, affiche son index dans ce tableau.
+
+    document.getElementById("run").addEventListener("click", () => {
+        console.log(people[8].email);
+        console.log(people[8].firstname);
+        //console.log(people[8]);
+        console.log(people.indexOf(people[8]));
+    });
+
+    
 })();

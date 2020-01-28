@@ -89,4 +89,20 @@
     ];
 
     // your code here
+    
+        
+
+
+    document.getElementById("run").addEventListener("click", () => {
+        
+        
+        const oldPeople = people.filter(people => people.age > 18);
+        console.log(oldPeople);
+        
+        
+    });
 })();
+
+
+
+// Au clic sur le bouton, crée un nouveau tableau à partir du tableau people, qui ne contiendra que les personnes dont l'âge est supérieur à 18 ans. Affiche le tableau résultant dans la console.
