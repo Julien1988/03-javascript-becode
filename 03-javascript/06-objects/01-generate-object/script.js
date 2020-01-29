@@ -11,4 +11,23 @@
 
 (() => {
     // your code here
+
+
+  const myArray = [
+      {
+          lastname: "Broens",
+          firstname: "Julien",
+          age: 31,
+          city: "Floreffe",
+          country: "Belgique"
+      }
+  ];
+
+  document.getElementById("run").addEventListener("click", () => {
+    console.log(myArray[0]);
+  });
+
+  
 })();
+
+// Au clic sur le bouton, affiche dans la console un object qui te présente et contient les propriétés suivantes lastname, firstname, age, city, country.

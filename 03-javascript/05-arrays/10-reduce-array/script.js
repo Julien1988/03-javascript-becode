@@ -93,11 +93,13 @@
     let peopleAge= [];
     for (let i = 0; i < people.length; i++){
         peopleAge.push(people[i].age);
-        //console.log(peopleAge);
         
     }
     document.getElementById("run").addEventListener("click", () =>{
         const reducer = (accumulator, currentValue) => accumulator + currentValue;
         console.log(peopleAge.reduce(reducer));
     });
+
+    
+
 })();
