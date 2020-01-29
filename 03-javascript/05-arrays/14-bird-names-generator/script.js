@@ -41,8 +41,13 @@
     // your code 
     let birdsLenght = birds.length;
     let adjectivesLength = adjectives.size;
+    let adjArray = []
+    
     let randomBird;
     let randomAdj;
+
+    let adjName;
+    let birdName;
 
     function randomBirds(max) {
         
@@ -57,10 +62,16 @@
 
     function textWriter(fem) {
         if ( fem === true ) {
-            
-            return 
+            adjName = adjArray[randomAdj] + "e";
+            birdName = birds[randomBird].name;
+            text = "La " + birdName + " " + adjName;
+            return text;
         } else {
-            return
+            adjName = adjArray[randomAdj];
+            birdName = birds[randomBird].name;
+            text = "Le " + birdName + " " + adjName;
+            return text;
+            
         }
     }
 
@@ -69,14 +80,21 @@
         randomBirds(birdsLenght);
         randomAdjs(adjectivesLength);
         textWriter(birds[randomBird].fem);
-        console.log(birds[randomBird].name);
-        console.log(Map.adjectives);
-
+        adjArray = Array.from(adjectives);
+        
+        //console.log(birds[randomBird].name);
+        //console.log(adjArray[randomAdj]);
+        console.log(text);
+        //console.log(adjName);
+        
         
         
         
         
     });
+    
+    
+    
     
 
     
