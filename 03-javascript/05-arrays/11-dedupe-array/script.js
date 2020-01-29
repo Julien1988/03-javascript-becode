@@ -28,4 +28,17 @@
     ];
 
     // your code here
+
+
+
+
+document.getElementById("run").addEventListener("click", () => {
+    var arrayWithoutDouble = fruits.reduce((acc, valCourante) => {
+        if(acc.indexOf(valCourante) === -1) {
+        acc.push(valCourante);
+        }
+        return acc
+    }, []);
+    console.log(arrayWithoutDouble);
+});
 })();
