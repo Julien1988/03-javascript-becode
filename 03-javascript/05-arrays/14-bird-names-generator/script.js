@@ -38,5 +38,50 @@
         "arboré",
     ]);
 
-    // your code here
+    // your code 
+    let birdsLenght = birds.length;
+    let adjectivesLength = adjectives.size;
+    let randomBird;
+    let randomAdj;
+
+    function randomBirds(max) {
+        
+        randomBird = Math.floor(Math.random() * Math.floor(max));
+        return randomBird;
+    }
+
+    function randomAdjs(max) {
+        randomAdj = Math.floor(Math.random() * Math.floor(max));
+        return randomAdj;
+    }
+
+    function textWriter(fem) {
+        if ( fem === true ) {
+            
+            return 
+        } else {
+            return
+        }
+    }
+
+    document.getElementById("run").addEventListener("click",() => {
+        
+        randomBirds(birdsLenght);
+        randomAdjs(adjectivesLength);
+        textWriter(birds[randomBird].fem);
+        console.log(birds[randomBird].name);
+        console.log(Map.adjectives);
+
+        
+        
+        
+        
+    });
+    
+
+    
 })();
+
+// Au clic sur le bouton, affiche dans la balise prévue un nom d'oiseau généré aléatoirement à partir des données du script.
+// Chaque nom est associé à une propriété qui vous permet de savoir si vous devez accorder l'adjectif (ajoutez un "e" en fin de mot).
+// Examples de résultat : La mouette chantante ou Le corbeau huppé. 

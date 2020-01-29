@@ -23,4 +23,12 @@
     ]);
 
     // your code here
+    document.getElementById("run").addEventListener("click", () => {
+        
+        console.log(people.size);
+        console.log(people.has("Alexandre"));
+    });
+
 })();
+
+// Au clic sur le bouton, affiche (dans la console) le nombre de personne dans le Set people. Ensuite, indique si Alexandre fait partie du Set.

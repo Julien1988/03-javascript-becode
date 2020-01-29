@@ -24,4 +24,20 @@
     ]);
 
     // your code here
+    
+    function deleteWord() {
+        fruits.delete("pomme");
+        fruits.delete("cerise");
+    }
+    
+    function addWord() {
+        fruits.add("banane");
+        fruits.add("kiwi");
+    }
+
+    document.getElementById("run").addEventListener("click", () => {
+        addWord();
+        deleteWord();
+        console.log(fruits);
+    });
 })();
