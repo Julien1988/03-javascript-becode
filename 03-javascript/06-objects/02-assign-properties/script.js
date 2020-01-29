@@ -27,4 +27,19 @@
         user: null,
     };
     // your code here
+
+    
+
+
+
+
+    
+    
+    
 })();
+
+// const returnedTarget = Object.assign(defaultProps, computers[7]);
+// computers[0].push(returnedTarget);
+// console.log(returnedTarget);
+// console.log(computers);
+
