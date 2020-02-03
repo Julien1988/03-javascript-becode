@@ -11,4 +11,33 @@
 
 (() => {
     // your code here
+
+    class Person {
+        constructor(firstName, lastName,) {
+            this.firstName = firstName;
+            this.lastName = lastName;
+        }
+
+        sayHello() {
+            return "Hello " + this.firstName + " " + this.lastName + " !"
+        }
+    }
+
+    let myPerson = new Person(
+        "Jean",
+        "Numberokordi "
+    );
+
+    document.getElementById("run").addEventListener("click", () => {
+        console.log(myPerson.sayHello());
+
+    });
+
 })();
+
+
+
+// Crée une classe Person. Elle aura deux propriétés, firstname et lastname, ainsi qu'une méthode sayHello, qui retournera "Hello, [firstname] [lastname]!".
+
+// Au clic sur le bouton, crée une instance de la classe Person et affiche dans la console la valeur de retour de la méthode sayHello.
+
