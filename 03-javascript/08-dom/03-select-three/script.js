@@ -11,4 +11,10 @@
 
 (() => {
     // your code here
+    var array = Array.from(document.getElementsByClassName("target"));
+    //console.log(array);
+    array.forEach((item, index) => {
+        
+        document.getElementsByClassName("target")[index].innerHTML = "Owned";
+    });
 })();

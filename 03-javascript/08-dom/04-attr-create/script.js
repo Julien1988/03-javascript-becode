@@ -11,4 +11,5 @@
 
 (() => {
     // your code here
+    let getSource = console.log(document.getElementById("source").getAttribute("data-image"));
 })();
