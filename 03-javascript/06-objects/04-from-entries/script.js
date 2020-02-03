@@ -19,6 +19,7 @@
       
       let object = Object.fromEntries(keys.map((_, i) => [keys[i], values[i]]));
       console.log(object);
+      
     });
     
 })();

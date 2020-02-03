@@ -17,4 +17,16 @@
         }
     }
     // your code here
+
+    let myCat = new Cat(
+        "Skitty",
+        "9ans "
+    );
+
+    let mySecondCat = new Cat(
+        "Pixel",
+        "6 ans"
+    );
+
+    console.log(myCat, mySecondCat);
 })();
