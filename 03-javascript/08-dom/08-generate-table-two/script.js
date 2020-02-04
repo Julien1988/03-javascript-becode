@@ -11,4 +11,13 @@
 
 (() => {
     // your code here
+    let getElement = document.getElementById("target");
+    let table = getElement.appendChild(document.createElement("table"));
+    for (let i = 1; i < 11; i++) {
+        let tr = table.appendChild(document.createElement("tr"));
+        for (let i2 = 1; i2 < 11; i2++) {
+        let td = tr.appendChild(document.createElement("td"));
+            td.innerHTML = i * i2;
+        }
+    }
 })();
