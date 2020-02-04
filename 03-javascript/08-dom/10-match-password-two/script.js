@@ -11,4 +11,23 @@
 
 (() => {
     // your code here
+    function testPassword(passOne, passTwo) {
+        if (passOne === passTwo ) {
+            console.log(true);
+        } else {
+            console.log (false);
+            document.getElementById("pass-one").setAttribute("class", "error");
+            document.getElementById("pass-two").setAttribute("class", "error");
+        }
+    }
+
+
+
+
+
+    document.getElementById("run").addEventListener("click",() => {
+        let getPassOne = document.getElementById("pass-one").value;
+        let getPassTwo = document.getElementById("pass-two").value;
+        testPassword(getPassOne, getPassTwo);
+    });
 })();
