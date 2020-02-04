@@ -11,4 +11,32 @@
 
 (() => {
     // your code here
+    
+    function getPasswordOn() {
+        return document.getElementById("pass-one").value;
+     
+    }
+
+    function getPasswordTwo() {
+        return document.getElementById("pass-two").value;
+        
+    }
+
+    function testPassword(passOne, passTwo) {
+        if ( passOne === passTwo) {
+            document.getElementById("pass-one").style.border ="1px solid #00FF00";
+            document.getElementById("pass-two").style.border ="1px solid #00FF00";
+            console.log(true);
+        } else {
+            document.getElementById("pass-one").style.border ="1px solid #ff0000";
+            document.getElementById("pass-two").style.border ="1px solid #ff0000";
+            console.log(false);
+        }
+    }
+
+    document.getElementById("run").addEventListener("click", () => {
+            testPassword(getPasswordOn(), getPasswordTwo());
+    });
+
+    
 })();
