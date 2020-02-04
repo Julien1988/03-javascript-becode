@@ -11,4 +11,16 @@
 
 (() => {
     // your code here
+
+    function getPassword() {
+        return document.getElementById("pass-one").value;
+    }
+
+    function keyCounter(count) {
+        console.log(count);
+    }
+
+    document.getElementById("pass-one").addEventListener("keydown", () => {
+        keyCounter(getPassword());
+    });
 })();
