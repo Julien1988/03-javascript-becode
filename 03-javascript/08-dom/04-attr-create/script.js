@@ -11,5 +11,13 @@
 
 (() => {
     // your code here
-    let getSource = console.log(document.getElementById("source").getAttribute("data-image"));
+    let getElement = document.getElementById("source")
+    let getSource = getElement.getAttribute("data-image");
+    let creatImg = document.createElement("img");
+    creatImg.id = "newTarget";
+    document.getElementById("target").appendChild(creatImg);
+    document.getElementById("newTarget").setAttribute("src", getSource);
+    document.getElementsByClassName("material")[0].removeChild(getElement);
+    
+
 })();
