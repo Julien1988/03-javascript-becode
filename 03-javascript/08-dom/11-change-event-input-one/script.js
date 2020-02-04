@@ -11,4 +11,26 @@
 
 (() => {
     // your code here
+
+    function getPassword() {
+        let index = document.getElementById("pass-one").value.length;
+        document.getElementById("counter").innerHTML = index+1 + " /10";
+        
+        return document.getElementById("pass-one").value;
+    }
+
+    function lettersCount(count) {
+        if (count.length >= 10) {
+            document.getElementById("pass-one").disabled = true;
+            //console.log(false);
+        } else {
+            document.getElementById("pass-one").disabled = false;
+        }
+    }
+
+    document.getElementById("pass-one").addEventListener("keydown", () => {
+        lettersCount(getPassword());
+        //console.log(getPassword());
+        
+    });
 })();
