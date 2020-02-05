@@ -11,4 +11,20 @@
 
 (() => {
     // your code here
+    let theContent = document.getElementById("target");
+    console.log(theContent);
+    let newArray = [...theContent.innerHTML];
+    theContent.innerHTML = " ";
+    console.log(newArray);
+    let count = 0;
+    function launcher () {
+        theContent.innerHTML += newArray[count];
+            count++;
+        if ( count < newArray.length ) {
+            setTimeout(launcher, 100);
+        }
+    }
+    launcher();
+   
+
 })();
