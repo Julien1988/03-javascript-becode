@@ -11,16 +11,30 @@
 
 (() => {
     // your code here
-
+    
     function getPassword() {
-        return document.getElementById("pass-one").value;
+        let reg = /([0-9].*[0-9])+/g;
+        if (reg.test(document.getElementById("pass-one").value)) {
+            return document.getElementById("pass-one").value;
+
+        } else {
+            return 0;
+        }
     }
 
     function keyCounter(count) {
-        console.log(count);
+        
+        if (count.length >= 8) {
+            return document.getElementById("validity").innerHTML = "OK";
+        } else {
+            return document.getElementById("validity").innerHTML = "Pas ok";
+        }
     }
-
-    document.getElementById("pass-one").addEventListener("keydown", () => {
+    
+    document.getElementById("pass-one").addEventListener("input", () => {
         keyCounter(getPassword());
+        
     });
 })();
+
+
