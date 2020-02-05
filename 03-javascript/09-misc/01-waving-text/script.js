@@ -11,4 +11,25 @@
 
 (() => {
     // your code here
+    let textContent = document.getElementById("target").firstChild.data;
+    let textReplace = document.getElementById("target");
+    let sensitive = 0;
+    let increment = 0;
+    //console.log ([...textContent]);
+    function fontSize(element) {
+        if (senstive === 0) {
+            increment++;
+        } else {
+            increment--;
+        }
+        return element%10;
+
+    }
+    textReplace.innerHTML = [...textContent].map((letter, i) => {
+        return letter.fontsize(fontSize(i));
+     
+    }).join("");
+    
+    
+ 
 })();
